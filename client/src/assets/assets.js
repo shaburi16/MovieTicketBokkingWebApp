@@ -1,18 +1,18 @@
-import logo from './logo.png'
-import marvelLogo from './marvelLogo.svg'
-import googlePlay from './googlePlay.svg'
-import appStore from './appStore.svg'
-import screenImage from './screenImage.svg'
-import profile from './profile.png'
+import logo from "./logo.png";
+import JioStudioLogo from "./JioStudioLogo.webp";
+import googlePlay from "./googlePlay.svg";
+import appStore from "./appStore.svg";
+import screenImage from "./screenImage.svg";
+import profile from "./profile.png";
 
 export const assets = {
-    logo,
-    marvelLogo,
-    googlePlay,
-    appStore,
-    screenImage,
-    profile
-}
+  logo,
+  JioStudioLogo,
+  googlePlay,
+  appStore,
+  screenImage,
+  profile,
+};
 
 export const dummyTrailers = [
     {
@@ -57,143 +57,139 @@ export const dummyShowsData = [
     {
         "_id": "324544",
         "id": 324544,
-        "title": "In the Lost Lands",
-        "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-        "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "title": "Jodhaa Akbar",
+        "overview": "Jodhaa is a fiery Rajput princess who is obliged to marry Mughal Emperor Akbar for political reasons. Eventually, mutual respect and admiration between the duo leads to true love.",
+        "poster_path": "https://m.media-amazon.com/images/M/MV5BNzg5YWI5YjMtMjhmNi00MDQxLTlmNWUtM2IzOWMzMDNhOTMzXkEyXkFqcGc@._V1_.jpg",
+        "backdrop_path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDFpBz7emWPg7b8GoZaTqd3R2osrWljZ5Xw&s",
         "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 14, "name": "Fantasy" },
-            { "id": 12, "name": "Adventure" }
+            { "id": 28, "name": "Romance" },
+            { "id": 14, "name": "Gore" },
+            
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-02-27",
-        "original_language": "en",
-        "tagline": "She seeks the power to free her people.",
-        "vote_average": 6.4,
-        "vote_count": 15000,
-        "runtime": 102,
+        "release_date": "2008-02-15",
+        "original_language": "Hindi",
+        "tagline": "In 16th-century India, what begins as a strategic alliance between a Mughal emperor and a Hindu princess becomes a genuine opportunity for true love.",
+        "vote_average": 7.5,
+        "vote_count": 34000,
+        "runtime": 214,
     },
     {
-        "_id": "1232546",
-        "id": 1232546,
-        "title": "Until Dawn",
-        "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
-        "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
-        "genres": [
-            { "id": 27, "name": "Horror" },
-            { "id": 9648, "name": "Mystery" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-04-23",
-        "original_language": "en",
-        "tagline": "Every night a different nightmare.",
-        "vote_average": 6.405,
-        "vote_count": 18000,
-        "runtime": 103,
-    },
+    "_id": "155",
+    "id": 155,
+    "title": "3 Idiots",
+    "overview": "Three engineering students learn lessons about friendship, success and life.",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop_path": "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "genres": [
+        { "id": 35, "name": "Comedy" },
+        { "id": 18, "name": "Drama" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2009-12-25",
+    "original_language": "hi",
+    "tagline": "Don't Chase Success. Chase Excellence.",
+    "vote_average": 8.0,
+    "vote_count": 42000,
+    "runtime": 170,
+},
+{
+    "_id": "438631",
+    "id": 438631,
+    "title": "Dangal",
+    "overview": "A former wrestler trains his daughters to become world-class wrestlers.",
+    "poster_path": "https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg",
+    "backdrop_path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84xOhK_tfWrR_icM0suC-Mh8A8s0xXViSYA&s",
+    "genres": [
+        { "id": 18, "name": "Drama" },
+        { "id": 10751, "name": "Family" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2016-12-21",
+    "original_language": "hi",
+    "tagline": "Mhaari Chhoriyan Chhoron Se Kam Hai Ke?",
+    "vote_average": 8.3,
+    "vote_count": 39000,
+    "runtime": 161,
+},
+{
+    "_id": "297222",
+    "id": 297222,
+    "title": "Bajrangi Bhaijaan",
+    "overview": "A man embarks on a journey to reunite a mute Pakistani girl with her family.",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BYzVjMjZiNGUtZjZiNy00Yzg4LWEzYzYtMmI1NDg5NWNiNjUwXkEyXkFqcGc@._V1_.jpg",
+    "backdrop_path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEI8p9hPNgwHamUn8UlG9RKi3XLYNtTEJxaw&s",
+    "genres": [
+        { "id": 35, "name": "Comedy" },
+        { "id": 18, "name": "Drama" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2015-07-17",
+    "original_language": "hi",
+    "tagline": "A Little Girl. A Big Journey.",
+    "vote_average": 8.1,
+    "vote_count": 37000,
+    "runtime": 163,
+},
+{
+    "_id": "999001",
+    "id": 999001,
+    "title": "Pathaan",
+    "overview": "An exiled RAW agent takes on a dangerous terrorist organization.",
+    "poster_path": "https://image.tmdb.org/t/p/original/vqu4z0N4R48rWJ6L6zv0J4Q0rN.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original/6l8A4HbU0dFj4Q5VhM4yV0bA5b.jpg",
+    "genres": [
+        { "id": 28, "name": "Action" },
+        { "id": 53, "name": "Thriller" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2023-01-25",
+    "original_language": "hi",
+    "tagline": "Bring Back The Hero.",
+    "vote_average": 6.7,
+    "vote_count": 25000,
+    "runtime": 146,
+},
     {
-        "_id": "552524",
-        "id": 552524,
-        "title": "Lilo & Stitch",
-        "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-        "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
-        "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 878, "name": "Science Fiction" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-05-17",
-        "original_language": "en",
-        "tagline": "Hold on to your coconuts.",
-        "vote_average": 7.117,
-        "vote_count": 27500,
-        "runtime": 108,
-    },
-    {
-        "_id": "668489",
-        "id": 668489,
-        "title": "Havoc",
-        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
-        "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 80, "name": "Crime" },
-            { "id": 53, "name": "Thriller" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-04-25",
-        "original_language": "en",
-        "tagline": "No law. Only disorder.",
-        "vote_average": 6.537,
-        "vote_count": 35960,
-        "runtime": 107,
-    },
-    {
-        "_id": "950387",
-        "id": 950387,
-        "title": "A Minecraft Movie",
-        "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
-        "poster_path": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-        "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 12, "name": "Adventure" },
-            { "id": 14, "name": "Fantasy" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-03-31",
-        "original_language": "en",
-        "tagline": "Be there and be square.",
-        "vote_average": 6.516,
-        "vote_count": 15225,
-        "runtime": 101,
-    },
-    {
-        "_id": "575265",
-        "id": 575265,
-        "title": "Mission: Impossible - The Final Reckoning",
-        "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
-        "poster_path": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 12, "name": "Adventure" },
-            { "id": 53, "name": "Thriller" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-05-17",
-        "original_language": "en",
-        "tagline": "Our lives are the sum of our choices.",
-        "vote_average": 7.042,
-        "vote_count": 19885,
-        "runtime": 170,
-    },
-    {
-        "_id": "986056",
-        "id": 986056,
-        "title": "Thunderbolts*",
-        "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-        "poster_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 878, "name": "Science Fiction" },
-            { "id": 12, "name": "Adventure" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-04-30",
-        "original_language": "en",
-        "tagline": "Everyone deserves a second shot.",
-        "vote_average": 7.443,
-        "vote_count": 23569,
-        "runtime": 127,
-    }
+    "_id": "999002",
+    "id": 999002,
+    "title": "Shershaah",
+    "overview": "Based on the life of Captain Vikram Batra, a brave Indian Army officer who fought in the Kargil War.",
+    "poster_path": "https://image.tmdb.org/t/p/original/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original/4dGxINxM8E6JtT0UPG6w9K0W6fD.jpg",
+    "genres": [
+        { "id": 28, "name": "Action" },
+        { "id": 18, "name": "Drama" },
+        { "id": 10752, "name": "War" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2021-08-12",
+    "original_language": "hi",
+    "tagline": "The Untold Story of a Hero.",
+    "vote_average": 8.4,
+    "vote_count": 28000,
+    "runtime": 135,
+},
+{
+    "_id": "999003",
+    "id": 999003,
+    "title": "Zindagi Na Milegi Dobara",
+    "overview": "Three friends set off on a road trip across Spain that changes their lives forever.",
+    "poster_path": "https://image.tmdb.org/t/p/original/twBqjM5J3gM9TQ0z6e0zV8H5Y5R.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original/m1n7w0Q5Yk4h6V5L8p3J7v9R2Y.jpg",
+    "genres": [
+        { "id": 35, "name": "Comedy" },
+        { "id": 18, "name": "Drama" },
+        { "id": 12, "name": "Adventure" }
+    ],
+    "casts": dummyCastsData,
+    "release_date": "2011-07-15",
+    "original_language": "hi",
+    "tagline": "Seize the Day.",
+    "vote_average": 8.2,
+    "vote_count": 31000,
+    "runtime": 155,
+},
 ]
 
 export const dummyDateTimeData = {

@@ -1,54 +1,76 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Menu, SearchIcon, TicketPlus, XIcon } from 'lucide-react'
+import { Menu, Search, TicketPlus, X } from 'lucide-react'
 import { assets } from '../assets/assets'
 import { useClerk, UserButton, useUser } from '@clerk/react'
 
 const Navbar = () => {
-
-  const[isOpen, setIsOpen]=useState(false)
-  const{user} = useUser()
-  const {openSignIn} = useClerk()
+  const [isOpen, setIsOpen] = useState(false)
+  const { user } = useUser()
+  const { openSignIn } = useClerk()
   const navigate = useNavigate()
 
+  const handleCloseMenu = () => {
+    window.scrollTo(0, 0)
+    setIsOpen(false)
+  }
+
   return (
-    <div className='fixed top-0 left-0 w-full flex items-center justify-between px-6 py-5'>
-{/* LOGO */}
+    <div className='fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 py-5'>
       <Link to='/home' className='max-md:flex-1'>
-        <img src={assets.logo} alt='' className='w-32 h-auto' />
+        <img src={assets.logo} alt='Logo' className='w-32 h-auto' />
       </Link>
 
-{/* NAV LINKS */}
-      <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium max-md:text-lg z-50 flex flex-col md:flex-row items-center max-md:justify-center gap-8 min-md:px-8 py-3 max-md:h-screen min-md:rounded-full backdrop:-blur bg-black/70 md:bg-white/10 md:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${isOpen ? 'max-md:w-full':'max-md:w-0'}`}>
+      <div
+        className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium max-md:text-lg z-50 flex flex-col md:flex-row items-center max-md:justify-center gap-8 md:px-8 py-3 max-md:h-screen md:rounded-full backdrop-blur-md bg-black/70 md:bg-white/10 md:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${isOpen ? 'max-md:w-full' : 'max-md:w-0'}`}
+      >
+        <X
+          className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer text-white'
+          onClick={() => setIsOpen(false)}
+        />
 
-        <XIcon className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer' onClick={()=> setIsOpen(!isOpen)}/>
-
-        <Link onClick={()=> {scrollTo(0,0), setIsOpen(false)}} to='/home'> Home</Link>
-        <Link onClick={()=> {scrollTo(0,0), setIsOpen(false)}} to='/movies'> Movies</Link>
-        <Link onClick={()=> {scrollTo(0,0), setIsOpen(false)}} to='/favorites'> WishLists</Link>
-        <Link onClick={()=> {scrollTo(0,0), setIsOpen(false)}} to='/'> YourBookings</Link>
-
+        <Link onClick={handleCloseMenu} to='/home' className='text-white'>
+          Home
+        </Link>
+        <Link onClick={handleCloseMenu} to='/movies' className='text-white'>
+          Movies
+        </Link>
+        <Link onClick={handleCloseMenu} to='/favorite' className='text-white'>
+          WishLists
+        </Link>
+        <Link onClick={handleCloseMenu} to='/my-bookings' className='text-white'>
+          YourBookings
+        </Link>
       </div>
 
-{/* SEARCH ICON, SEARCH & PROFILE */}
-      <div className='flex items-center gap-8'>
-        <SearchIcon className='max-md:hidden w-6 h-6 cursor-pointer'/>
-        {
-          !user ? (
-            <button onClick={openSignIn} className='px-4 py-1 sm:px-7 sm:py-2 bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer'>Login</button>
-          ) : (
-            <UserButton>
-              <UserButton.MenuItems>
-                <UserButton.Action label='My Booking' labelIcon={<TicketPlus width={15}/>} onClick={() => navigate('/my-bookings') }/>
-              </UserButton.MenuItems>
-            </UserButton>
-          )
-        }
-       
-      </div>
+      <div className='flex items-center gap-8 z-50'>
+        <Search className='max-md:hidden w-6 h-6 cursor-pointer text-white' />
 
-{/* MENU ICON */}
-      <Menu size={32} className='md:hidden cursor-pointer' onClick={() => setIsOpen(!isOpen)} />
+        {!user ? (
+          <button
+            onClick={openSignIn}
+            className='px-4 py-1 sm:px-7 sm:py-2 bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer text-white'
+          >
+            Login
+          </button>
+        ) : (
+          <UserButton>
+            <UserButton.MenuItems>
+              <UserButton.Action
+                label='My Booking'
+                labelIcon={<TicketPlus width={15} />}
+                onClick={() => navigate('/my-bookings')}
+              />
+            </UserButton.MenuItems>
+          </UserButton>
+        )}
+
+        <Menu
+          size={32}
+          className='md:hidden cursor-pointer text-white'
+          onClick={() => setIsOpen(!isOpen)}
+        />
+      </div>
     </div>
   )
 }

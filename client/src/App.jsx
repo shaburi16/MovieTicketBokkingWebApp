@@ -11,22 +11,24 @@ import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer'
 
 const App = () => {
+  const isAdminRoute = useLocation().pathname.startsWith('/admin')
 
-  const isAdiminRoute = useLocation().pathname.startsWith('/admin')
   return (
     <>
-    <Toaster />
-      {!isAdiminRoute && <Navbar/>}
-      <Routes>
-        <Route path='/home' element={<Home/>} />
-        <Route path='/movies' element={<Movies/>} />
-        <Route path='/movies/:id' element={<MovieDetails/>} />
-        <Route path='/movies/:date' element={<SeatLayout/>} />
-        <Route path='/my-bookings' element={<MyBookings/>} />
-        <Route path='/favorite' element={<Favorite/>} />
-      </Routes>
-        {!isAdiminRoute && <Footer/>}
+      <Toaster />
+      {!isAdminRoute && <Navbar />}
 
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/movies' element={<Movies />} />
+        <Route path='/movies/:id' element={<MovieDetails />} />
+        <Route path='/seat-layout/:date' element={<SeatLayout />} />
+        <Route path='/my-bookings' element={<MyBookings />} />
+        <Route path='/favorite' element={<Favorite />} />
+      </Routes>
+
+      {!isAdminRoute && <Footer />}
     </>
   )
 }
