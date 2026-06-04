@@ -16,20 +16,20 @@ export const assets = {
 
 export const dummyTrailers = [
     {
-        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+        image: "https://i.ytimg.com/vi/bMgfsdYoEEo/hq720.jpg",
+        videoUrl: 'https://www.youtube.com/embed/bMgfsdYoEEo'
     },
     {
-        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
+        image: "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png",
+        videoUrl: 'https://www.youtube.com/embed/b9EkMc79ZSU'
     },
     {
-        image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=1pHDWnXmK7Y'
+        image: "https://i.ytimg.com/vi/BGQz3J_CL8k/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/embed/XTnwldBXgAc'
     },
     {
-        image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=umiKiW4En9g'
+        image: "https://filminformation.com/wp-content/uploads/2023/12/hi-papa-101821743.jpg",
+        videoUrl: 'https://www.youtube.com/embed/80T1qoy9RSY'
     },
 ]
 
