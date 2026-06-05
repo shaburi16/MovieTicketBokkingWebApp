@@ -136,8 +136,8 @@ export const dummyShowsData = [
     "id": 999001,
     "title": "Pathaan",
     "overview": "An exiled RAW agent takes on a dangerous terrorist organization.",
-    "poster_path": "https://image.tmdb.org/t/p/original/vqu4z0N4R48rWJ6L6zv0J4Q0rN.jpg",
-    "backdrop_path": "https://image.tmdb.org/t/p/original/6l8A4HbU0dFj4Q5VhM4yV0bA5b.jpg",
+    "poster_path": "https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg",
+    "backdrop_path": "https://assets-in.bmscdn.com/discovery-catalog/events/et00323848-ckvlcmssdb-landscape.jpg",
     "genres": [
         { "id": 28, "name": "Action" },
         { "id": 53, "name": "Thriller" }
@@ -155,8 +155,8 @@ export const dummyShowsData = [
     "id": 999002,
     "title": "Shershaah",
     "overview": "Based on the life of Captain Vikram Batra, a brave Indian Army officer who fought in the Kargil War.",
-    "poster_path": "https://image.tmdb.org/t/p/original/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
-    "backdrop_path": "https://image.tmdb.org/t/p/original/4dGxINxM8E6JtT0UPG6w9K0W6fD.jpg",
+    "poster_path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZSM8yIps7A07m8xm4Fs76lpN18eIUOzrzEg&s",
+    "backdrop_path": "https://m.media-amazon.com/images/S/pv-target-images/3de8bc910ea9b1498905f9402400df3c086f0ea9bc35d12bc20f0b133ea37e23.jpg",
     "genres": [
         { "id": 28, "name": "Action" },
         { "id": 18, "name": "Drama" },
@@ -175,8 +175,8 @@ export const dummyShowsData = [
     "id": 999003,
     "title": "Zindagi Na Milegi Dobara",
     "overview": "Three friends set off on a road trip across Spain that changes their lives forever.",
-    "poster_path": "https://image.tmdb.org/t/p/original/twBqjM5J3gM9TQ0z6e0zV8H5Y5R.jpg",
-    "backdrop_path": "https://image.tmdb.org/t/p/original/m1n7w0Q5Yk4h6V5L8p3J7v9R2Y.jpg",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BOGIzYzg5NzItNDRkYS00NmIzLTk3NzQtZWYwY2VlZDhiYWQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop_path": "https://i.ytimg.com/vi/FJrpcDgC3zU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBQJAKpEkgrLALZG5SI1zxbWZmemw",
     "genres": [
         { "id": 35, "name": "Comedy" },
         { "id": 18, "name": "Drama" },
