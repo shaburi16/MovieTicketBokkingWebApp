@@ -36,7 +36,7 @@ const Navbar = () => {
           Movies
         </Link>
         <Link onClick={handleCloseMenu} to='/favorite' className='text-white'>
-          WishLists
+          Favorites
         </Link>
         <Link onClick={handleCloseMenu} to='/my-bookings' className='text-white'>
           YourBookings
