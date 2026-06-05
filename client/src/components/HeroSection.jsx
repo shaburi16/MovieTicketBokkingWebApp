@@ -2,6 +2,7 @@ import React from "react";
 import { assets } from "../assets/assets";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import ShinyText from "../components/ShinyText"
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -21,7 +22,18 @@ const HeroSection = () => {
         />
 
         <h1 className="text-5xl md:text-[70px] md:leading-[80px] font-semibold text-white">
-          Dhurandhar
+         <ShinyText
+            text="Dhurandhar"
+            speed={2}
+            delay={0}
+            color="#b5b5b5"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+            
+          />
         </h1>
 
         <div className="flex flex-wrap items-center gap-4 text-gray-300">
@@ -46,7 +58,18 @@ const HeroSection = () => {
           onClick={() => navigate("/movies")}
           className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full font-medium hover:opacity-90 transition cursor-pointer"
         >
-          Explore Movies
+          <ShinyText
+            text="Explore Now"
+            speed={2}
+            delay={0}
+            color="#b5b5b5"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+            className="text-lg font-medium"
+          />
           <ArrowRight className="w-5 h-5" />
         </button>
       </div>
