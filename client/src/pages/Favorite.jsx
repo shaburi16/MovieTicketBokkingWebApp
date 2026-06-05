@@ -1,14 +1,14 @@
-import React from 'react'
-import { dummyShowsData } from '../assets/assets'
-import MovieCard from '../components/MovieCard'
-import BlurCircle from "../components/BlurCircle"
-import Galaxy from "../components/Galaxy"
-import ShinyText from "../components/ShinyText"
+import React from 'react';
+import { dummyShowsData } from '../assets/assets';
+import MovieCard from '../components/MovieCard';
+import BlurCircle from "../components/BlurCircle";
+import Galaxy from "../components/Galaxy";
+import ShinyText from "../components/ShinyText";
+import ScrollReveal from "../components/ScrollReveal";
 
 const Favorite = () => {
   return dummyShowsData.length > 0 ? (
     <div className='relative my-40 mb-60 px-6 md:px-16 lg:px-40 xl:px-44 overflow-hidden min-h-[80vh]'>
-
       <div
         style={{
           position: 'absolute',
@@ -35,26 +35,30 @@ const Favorite = () => {
       <BlurCircle top='150px' left='0px' />
       <BlurCircle bottom='50px' right='50px' />
 
-      <div className='relative z-10 my-4'>
-        <h1 className='text-lg font-medium'>
-          <ShinyText
-            text="Your Favorite Movies"
-            speed={2}
-            delay={0}
-            color="#b5b5b5"
-            shineColor="#ffffff"
-            spread={120}
-            direction="left"
-            yoyo={false}
-            pauseOnHover={false}
-            className="text-lg font-medium"
-          />
-        </h1>
-      </div>
+      <ScrollReveal>
+        <div className='relative z-10 my-4'>
+          <h1 className='text-lg font-medium'>
+            <ShinyText
+              text="Your Favorite Movies"
+              speed={2}
+              delay={0}
+              color="#b5b5b5"
+              shineColor="#ffffff"
+              spread={120}
+              direction="left"
+              yoyo={false}
+              pauseOnHover={false}
+              className="text-lg font-medium"
+            />
+          </h1>
+        </div>
+      </ScrollReveal>
 
       <div className='relative z-10 flex flex-wrap max-sm:justify-center gap-8'>
-        {dummyShowsData.map((movie) => (
-          <MovieCard movie={movie} key={movie._id} />
+        {dummyShowsData.map((movie, index) => (
+          <ScrollReveal key={movie._id} delay={index * 100} y={35}>
+            <MovieCard movie={movie} />
+          </ScrollReveal>
         ))}
       </div>
     </div>
@@ -64,7 +68,7 @@ const Favorite = () => {
         NO Movies Available
       </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Favorite
+export default Favorite;
