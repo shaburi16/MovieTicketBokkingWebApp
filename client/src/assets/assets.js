@@ -33,25 +33,88 @@ export const dummyTrailers = [
     },
 ]
 
-const dummyCastsData = [
-    { "name": "Milla Jovovich", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
-    { "name": "Dave Bautista", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
-    { "name": "Arly Jover", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
-    { "name": "Amara Okereke", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", },
-    { "name": "Fraser James", "profile_path": "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg", },
-    { "name": "Deirdre Mullins", "profile_path": "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg", },
-    { "name": "Sebastian Stankiewicz", "profile_path": "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg", },
-    { "name": "Tue Lunding", "profile_path": "https://image.tmdb.org/t/p/original/qY4W0zfGBYzlCyCC0QDJS1Muoa0.jpg", },
-    { "name": "Jacek Dzisiewicz", "profile_path": "https://image.tmdb.org/t/p/original/6Ksb8ANhhoWWGnlM6O1qrySd7e1.jpg", },
-    { "name": "Ian Hanmore", "profile_path": "https://image.tmdb.org/t/p/original/yhI4MK5atavKBD9wiJtaO1say1p.jpg", },
-    { "name": "Eveline Hall", "profile_path": "https://image.tmdb.org/t/p/original/uPq4xUPiJIMW5rXF9AT0GrRqgJY.jpg", },
-    { "name": "Kamila Klamut", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
-    { "name": "Caoilinn Springall", "profile_path": "https://image.tmdb.org/t/p/original/uZNtbPHowlBYo74U1qlTaRlrdiY.jpg", },
-    { "name": "Jan Kowalewski", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
-    { "name": "Pawel Wysocki", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
-    { "name": "Simon Lööf", "profile_path": "https://image.tmdb.org/t/p/original/cbZrB8crWlLEDjVUoak8Liak6s.jpg", },
-    { "name": "Tomasz Cymerman", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", }
-]
+export const dummyCastsData = [
+  {
+    name: "Hrithik Roshan",
+    profile_path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKxhD1ryKYkIV93FeQkFMUlI-xPsbtbK_L2tdglG8GsV6Ei8C_jiaPSp_RPEra_eUAzJwgAPi8yIQZLAT-vKrNZrzjv94R7rrmAVcZkc8&s=10",
+  },
+  {
+    name: "Aishwarya Rai ",
+    profile_path: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Aishwarya_Rai_Cannes_2017.jpg",
+  },
+  {
+    name: "Aamir Khan",
+    profile_path: "https://m.media-amazon.com/images/M/MV5BMjAwMjk3NDUzN15BMl5BanBnXkFtZTcwNjI4MTY0NA@@._V1_FMjpg_UX1000_.jpg",
+  },
+  {
+    name: "R. Madhavan",
+    profile_path: "https://filmfare.wwmindia.com/content/2026/may/theactorcalledoutthehealthcarebrandelevatenowandsentalegalnoticeforusinghisnametoadvertisetheirbrand1779273042.jpg",
+  },
+  {
+    name: "Sharman Joshi",
+    profile_path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3sw7wtNBNEEXl0YLz9dAd_py8u6IbwLnXCg&s",
+  },
+  {
+    name: "Kareena Kapoor",
+    profile_path: "https://cf-images.assettype.com/nationalherald%2F2018-09%2Fffd16214-a4c7-4e2c-a487-913e14a4ed57%2Fkareena_kapoor_birthday.jpg?rect=0%2C20%2C1200%2C675&auto=format%2Ccompress&fmt=webp&w=1200",
+  },
+  {
+    name: "Boman Irani",
+    profile_path: "https://static.toiimg.com/thumb/msid-80022519,width-400,resizemode-4/80022519.jpg",
+  },
+  {
+    name: "Fatima Sana Shaikh",
+    profile_path: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fatima_Sana_Shaikh_at_the_launch_of_Netflix_Slate_2025_%28cropped%29.jpg/250px-Fatima_Sana_Shaikh_at_the_launch_of_Netflix_Slate_2025_%28cropped%29.jpg",
+  },
+  {
+    name: "Sanya Malhotra",
+    profile_path: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sanya_Malhotra_at_the_launch_of_Netflix_Slate_2025_%28cropped%29.jpg",
+  },
+  {
+    name: "Salman Khan",
+    profile_path: "https://resizing.flixster.com/3U_alRxQ78VoiUESebtZ_mb7b3Y=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/173429_v9_bb.jpg",
+  },
+  {
+    name: "Harshaali Malhotra",
+    profile_path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpK5QZydWTSbt2w5j9A4P1h_IfePtcA8sHJA&s",
+  },
+  {
+    name: "Nawazuddin Siddiqui",
+    profile_path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3FyWvWAPchCn_m-M81tEsYHumN07uzAtjhA&s",
+  },
+  {
+    name: "Shah Rukh Khan",
+    profile_path: "https://m.media-amazon.com/images/M/MV5BODk3OWIyY2MtM2E0MS00OWYyLTlkNDktMzY4MTE1MDhiYzBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  },
+  {
+    name: "Deepika Padukone",
+    profile_path: "https://en.wikipedia.org/wiki/Deepika_Padukone",
+  },
+  {
+    name: "John Abraham",
+    profile_path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_V85BReB8IrK9D3TUVc-f2YL0iUY8ISeRQg&s",
+  },
+  {
+    name: "Sidharth Malhotra",
+    profile_path: "https://artistbookingcompany.com/wp-content/uploads/2024/03/sidharth-malhotra-680x680.jpg",
+  },
+  {
+    name: "Kiara Advani",
+    profile_path: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Kiara_Advani_snapped_at_the_screening_of_Shershaah_%28cropped%29.jpg",
+  },
+  {
+    name: "Farhan Akhtar",
+    profile_path: "https://upload.wikimedia.org/wikipedia/commons/1/13/FarhanAkhtar.jpg",
+  },
+  {
+    name: "Abhay Deol",
+    profile_path: "https://londonspeakerbureau.com/wp-content/uploads/2017/11/Abhay-Deol-Keynote-Speaker.jpg",
+  },
+  {
+    name: "Katrina Kaif",
+    profile_path: "https://images.indianexpress.com/2025/03/katrina-kaif-1.jpg?w=1200",
+  },
+];
 
 export const dummyShowsData = [
     {
