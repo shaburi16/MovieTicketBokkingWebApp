@@ -14,6 +14,12 @@ import SeatLayout from './pages/SeatLayout'
 import MyBookings from './pages/MyBookings'
 import Favorite from './pages/Favorite'
 
+import AddShow from './pages/admin/AddShow'
+import ListBookings from './pages/admin/ListBookings'
+import Layout from './pages/admin/Layout'
+import ListShows from './pages/admin/ListShows'
+import Dashboard  from './pages/admin/Dashboard'
+
 const App = () => {
   const { pathname } = useLocation()
   const isAdminRoute = pathname.startsWith('/admin')
@@ -41,6 +47,15 @@ const App = () => {
         <Route path='/seat-layout/:id/:date' element={<SeatLayout />} />
         <Route path='/my-bookings' element={<MyBookings />} />
         <Route path='/favorite' element={<Favorite />} />
+
+        <Route path='/admin/*' element={<Layout/>}>
+          <Route index element={<Dashboard/>}/>
+          <Route path='add-shows' element={< AddShow/>}/>
+          <Route path='list-shows' element={< ListShows/>}/>
+          <Route path='list-bookings' element={< ListBookings/>}/>
+    
+        </Route>
+
       </Routes>
 
       {!isAdminRoute && <Footer />}
